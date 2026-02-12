@@ -37,3 +37,38 @@ const users = [
 ];
 
 // total salary payout
+const totalSalary = users.reduce((sum, user) => {
+  return sum + user.salary;
+}, 0);
+console.log("Total Salary:", totalSalary);
+
+// role wise gruping
+const groupByRole = users.reduce((acc, user) => {
+  acc[user.role] = [];
+  acc[user.role].push(user);
+  return acc;
+}, {});
+console.log("Group By Role", groupByRole);
+
+// count Active vs Inactive users
+const statusCount = users.reduce(
+  (acc, user) => {
+    user.isActive ? acc.active++ : acc.inactive++;
+    return acc;
+  },
+  { active: 0, inactive: 0 },
+);
+console.log("Status Count:", statusCount);
+
+// highest paid employee
+const highestPaid = users.reduce((max, user) => {
+  return user.salary > max.salary ? user : max;
+});
+console.log("Highest Paid", highestPaid);
+
+// lookup map by id
+const byId = users.reduce((acc, user) => {
+  acc[user.id] = user;
+  return acc;
+}, {});
+console.log("Lookup map by id", byId);
