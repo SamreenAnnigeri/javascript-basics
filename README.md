@@ -8,6 +8,7 @@ This repository is a collection of small, focused JavaScript examples that illus
 - **`classes-and-interfaces`**: Demonstrations of ES6 classes plus how to express "interfaces" in plain JavaScript using JSDoc typings and duck typing.
 - **`array-methods`**: Practical snippets using `map`, `filter`, `reduce`, `forEach`, and `Set`.
 - **`async-patterns`**: Callback, callback-hell, promises, and `async/await` patterns.
+- **`module-system-deep-dive`**: Side-by-side ES Modules (`import`/`export`) and CommonJS (`require`/`module.exports`) examples with runnable files and notes.
 - **`loops`**: Looping constructs such as `for` examples.
 - **`index.js`**: Entry point you can temporarily use to import or run specific examples if you want a single starting script.
 
@@ -30,6 +31,8 @@ No external npm dependencies are required; everything uses plain JavaScript.
   ```bash
   node js-fundamentals/closures.js
   node classes-and-interfaces/interface-examples.js
+  node module-system-deep-dive/es-modules/app.mjs
+  node module-system-deep-dive/commonjs/app.cjs
   ```
 
 - You can freely modify the examples, add `console.log` calls, or create new files to experiment further.
@@ -39,7 +42,8 @@ No external npm dependencies are required; everything uses plain JavaScript.
 1. **`js-fundamentals`**: Get comfortable with scoping, closures, hoisting, `this`, and prototypes.
 2. **`array-methods`**: Practice transforming and aggregating data.
 3. **`async-patterns`**: Learn how JavaScript handles asynchronous code.
-4. **`classes-and-interfaces`**: See how object-oriented patterns and "interfaces by shape" work in JavaScript.
+4. **`module-system-deep-dive`**: Understand ES Modules vs CommonJS and when each style is used.
+5. **`classes-and-interfaces`**: See how object-oriented patterns and "interfaces by shape" work in JavaScript.
 
 ### Notes
 
